@@ -52,15 +52,16 @@ rules:
  - MATCH,Final
 
 rule-providers:
-  AdBlock: {type: http, behavior: classical, path: ./Filter/AdBlock.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/Advertising/Advertising_Classical.yaml, interval: 3600}
-  GoogleVoice: {type: http, behavior: classical, path: ./Filter/GoogleVoice.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/GoogleVoice/GoogleVoice.yaml, interval: 3600}
-  OpenAI: {type: http, behavior: classical, path: ./Filter/OpenAI.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/OpenAI/OpenAI.yaml, interval: 3600}
-  Telegram: {type: http, behavior: classical, path: ./Filter/Telegram.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/Telegram/Telegram.yaml, interval: 3600}
-  Facebook: {type: http, behavior: classical, path: ./Filter/Facebook.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/Facebook/Facebook.yaml, interval: 3600}
-  Google: {type: http, behavior: classical, path: ./Filter/Google.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/Google/Google.yaml, interval: 3600}
-  Spotify: {type: http, behavior: classical, path: ./Filter/Spotify.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/Spotify/Spotify.yaml, interval: 3600}
-  Twitter: {type: http, behavior: classical, path: ./Filter/Twitter.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/Twitter/Twitter.yaml, interval: 3600}
-  PayPal: {type: http, behavior: classical, path: ./Filter/PayPal.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/PayPal/PayPal.yaml, interval: 3600}
-  YouTube: {type: http, behavior: classical, path: ./Filter/YouTube.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/YouTube/YouTube.yaml, interval: 3600}
-  Amazon: {type: http, behavior: classical, path: ./Filter/Amazon.yaml, url: https://gitee.com/stobhk/ios_rule_script/raw/master/rule/Clash/Amazon/Amazon.yaml, interval: 3600}
-  IOSUpdate: {type: http, behavior: classical, path: ./Filter/IOSUpdateClash.yaml, url: https://gitee.com/stobhk/QxRules/raw/main/IOSUpdateClash.yaml, interval: 3600}
+  IOSUpdate: {type: http, behavior: classical, path: ./Filter/IOSUpdateClash.yaml, url: https://raw.githubusercontent.com/stobhk/QxRules/master/IOSUpdateClash.yaml, interval: 3600}
+  AdBlock: {type: http, behavior: classical, path: ./Filter/AdBlock.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml, interval: 3600}
+  GoogleVoice: {type: http, behavior: classical, path: ./Filter/GoogleVoice.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/GoogleVoice/GoogleVoice.yaml, interval: 3600}
+  OpenAI: {type: http, behavior: classical, path: ./Filter/OpenAI.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml, interval: 3600}
+  Telegram: {type: http, behavior: classical, path: ./Filter/Telegram.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml, interval: 3600}
+  Facebook: {type: http, behavior: classical, path: ./Filter/Facebook.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml, interval: 3600}
+  Google: {type: http, behavior: classical, path: ./Filter/Google.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/Google/Google.yaml, interval: 3600}
+  Spotify: {type: http, behavior: classical, path: ./Filter/Spotify.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml, interval: 3600}
+  Twitter: {type: http, behavior: classical, path: ./Filter/Twitter.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml, interval: 3600}
+  PayPal: {type: http, behavior: classical, path: ./Filter/PayPal.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml, interval: 3600}
+  YouTube: {type: http, behavior: classical, path: ./Filter/YouTube.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml, interval: 3600}
+  Amazon: {type: http, behavior: classical, path: ./Filter/Amazon.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/Amazon/Amazon.yaml, interval: 3600}
+  Bing: {type: http, behavior: classical, path: ./Filter/Bing.yaml, url: https://raw.githubusercontent.com/stobhk/ios_rule_script/master/rule/Clash/Bing/Bing.yaml, interval: 3600}
