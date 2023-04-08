@@ -1,6 +1,6 @@
 # QxRules
 
 
-Clash :  https://raw.githubusercontent.com/jssunhaimin/QxRules/master/IOSUpdateClash.yaml 
+Clash :  https://raw.githubusercontent.com/stobhk/QxRules/master/IOSUpdateClash.yaml 
 
-Qx :   https://raw.githubusercontent.com/jssunhaimin/QxRules/master/IOSUpdateQx.list
+Qx :   https://raw.githubusercontent.com/stobhk/QxRules/master/IOSUpdateQx.list
