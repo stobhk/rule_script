@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:8853
+  enhanced-mode: fake-ip
+  nameserver:
+  fake-ip-filter:
+ 
+proxies:
+proxy-groups:
+  - name: Proxies
+    type: select
+    proxies:
+
+  - name: OpenAI
+    type: select
+    proxies:
+      - US
+  - name: Netflix
+    type: select
+
+rules:
+ - RULE-SET,AdBlock,REJECT
+ - RULE-SET,IOSUpdate,REJECT
+ - RULE-SET,GoogleVoice,OpenAI
+ - RULE-SET,OpenAI,OpenAI
+ - RULE-SET,Amazon,OpenAI
+ - RULE-SET,Spotify,OpenAI
+ - RULE-SET,Facebook,Proxies
+ - RULE-SET,Google,Proxies
+ - RULE-SET,Telegram,Proxies
+ - RULE-SET,Twitter,Proxies
+ - RULE-SET,YouTube,Proxies
+ - RULE-SET,PayPal,Proxies
+ - GEOIP,CN,DIRECT
+ - DOMAIN-SUFFIX,local,DIRECT
+ - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+ - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+ - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+ - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+ - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+ - IP-CIDR6,::1/128,DIRECT,no-resolve
+ - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+ - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+ - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+ - MATCH,Final
+
+rule-providers:
+  AdBlock: {type: http, behavior: classical, path: ./Filter/AdBlock.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml, interval: 3600}
+  GoogleVoice: {type: http, behavior: classical, path: ./Filter/GoogleVoice.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/GoogleVoice/GoogleVoice.yaml, interval: 3600}
+  OpenAI: {type: http, behavior: classical, path: ./Filter/OpenAI.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml, interval: 3600}
+  Telegram: {type: http, behavior: classical, path: ./Filter/Telegram.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml, interval: 3600}
+  Facebook: {type: http, behavior: classical, path: ./Filter/Facebook.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml, interval: 3600}
+  Amazon: {type: http, behavior: classical, path: ./Filter/Amazon.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/Amazon/Amazon.yaml, interval: 3600}
+  Google: {type: http, behavior: classical, path: ./Filter/Google.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/Google/Google.yaml, interval: 3600}
+  Spotify: {type: http, behavior: classical, path: ./Filter/Spotify.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml, interval: 3600}
+  Twitter: {type: http, behavior: classical, path: ./Filter/Twitter.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml, interval: 3600}
+  PayPal: {type: http, behavior: classical, path: ./Filter/PayPal.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml, interval: 3600}
+  YouTube: {type: http, behavior: classical, path: ./Filter/YouTube.yaml, url: https://raw.githubusercontent.com/jssunhaimin/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml, interval: 3600}
+  IOSUpdate: {type: http, behavior: classical, path: ./Filter/IOSUpdateClash.yaml, url: https://raw.githubusercontent.com/jssunhaimin/QxRules/master/IOSUpdateClash.yaml, interval: 3600}
