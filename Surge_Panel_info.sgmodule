@@ -1,3 +1,10 @@
+#!name=本机网络&流媒体&机场流量信息
+#!desc=显示本机网络&流媒体&机场流量信息
+#!system=ios
+# 原作者未知，均来自网络
+# 更新日期：2024.10.25
+# 版本：1.0
+
 [Panel]
 PanelA = script-name=net-info, title="网络信息",update-interval=3600
 PanelB = script-name=stream-all, title="流媒体解锁", content="请刷新面板", update-interval=3600
