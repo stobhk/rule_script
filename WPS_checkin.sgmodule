@@ -1,5 +1,6 @@
 #!name=WPS签到
 #!desc=打开https://vip.wps.cn/home 登录账号后获取Cookie
+#!category=✅签到
 #!arguments=AK:null,SK:null,MAX_RETRIES:5,TIMEOUT:120,CRONEXP: 0 8 * * *,DAY:1
 #!arguments-desc=百度API\nAK - API Key\nSK - Secret Key\nMAX_RETRIES - 最大运行次数\nDAY - 兑换天数 (默认为1)
 
