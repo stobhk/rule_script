@@ -1,6 +1,6 @@
 #!name=百度贴吧
 #!desc=百度贴吧每日自动签到
-#!system=ios
+#!category=✅签到
 #!arguments=CRONEXP: 10 1 * * *,TIMEOUT:120
 
 [Script]
