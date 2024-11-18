@@ -1,0 +1,14 @@
+#!name=52Pojie签到
+#!desc=52Pojie签到
+#!category=✅签到
+#!arguments=TIMEOUT:120,CRONEXP: 8 0 * * *
+
+[Script]
+# > 吾爱破解 web获取
+吾爱破解Cookie = type=http-request,pattern=^https:\/\/www\.52pojie\.cn\/home\.php\?,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js
+
+# > 吾爱破解
+吾爱破解签到 = type=cron,cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}},script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js,script-update-interval=0
+
+[MITM]
+hostname =  %APPEND% www.52pojie.cn
