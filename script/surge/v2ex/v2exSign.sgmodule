@@ -1,5 +1,5 @@
 #!name=v2ex签到
-#!desc=脚本更新时间:2024.2.18 失效群内反馈 群组：https://t.me/IPAs_Dd频道：https://t.me/IPAs_share
+#!desc=v2ex签到
 #!category=✅签到
 #!arguments=TIMEOUT:120,CRONEXP: 8 0 * * *
 
