@@ -1,5 +1,6 @@
 #!name=美团签到
 #!desc=美团签到
+#!category=✅签到
 #!arguments=TIMEOUT:120,CRONEXP: 5 0 * * *
 
 [Script]
