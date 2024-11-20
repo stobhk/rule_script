@@ -1,7 +1,7 @@
 #!name=建行生活签到领取
 #!desc=建行生活签到领取
 #!category=✅签到
-#!arguments=TIMEOUT:120,CRONEXP: 8 0 * * *
+#!arguments=TIMEOUT:120,CRONEXP: 43 0 * * *
 
 #建行生活APP -> 首页 -> 会员有礼 -> 签到
 #脚本说明：连续签到领优惠券礼包（打车、外卖优惠券），配置重写手动签到一次即可获取签到数据，默认领取外卖券
