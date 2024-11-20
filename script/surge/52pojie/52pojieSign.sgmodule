@@ -1,7 +1,7 @@
 #!name=52Pojie签到
 #!desc=52Pojie签到
 #!category=✅签到
-#!arguments=TIMEOUT:120,CRONEXP: 8 0 * * *
+#!arguments=TIMEOUT:120,CRONEXP: 6 0 * * *
 
 [Script]
 # > 吾爱破解 web获取
