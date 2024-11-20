@@ -1,0 +1,13 @@
+#!name=伊利乳品每日积分
+#!desc=伊利乳品每日积分
+#!category=✅签到
+#!arguments=TIMEOUT:120,CRONEXP: 33 0 * * *
+
+#  进入小程序-点我的
+
+[Script]
+伊利乳品token = type=http-request, requires-body=1, pattern=https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/yiLi.js
+伊利乳品每日积分 = type=cron,cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}},script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/yiLi.js
+
+[MITM]
+hostname = %APPEND% club.yili.com
