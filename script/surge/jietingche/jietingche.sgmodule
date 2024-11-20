@@ -3,6 +3,8 @@
 #!category=✅签到
 #!arguments=TIMEOUT:120,CRONEXP: 21 0 * * *
 
+#使用说明：添加重写规则并打开捷停车 APP 即可获取 userId 和 Token
+
 [Script]
 获取捷停车userId = type=http-request, pattern=^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
 
