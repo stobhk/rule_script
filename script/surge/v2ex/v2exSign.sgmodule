@@ -1,7 +1,7 @@
 #!name=v2ex签到
 #!desc=v2ex签到
 #!category=✅签到
-#!arguments=TIMEOUT:120,CRONEXP: 8 0 * * *
+#!arguments=TIMEOUT:120,CRONEXP: 8 9 * * *
 
 #脚本更新时间:2024.2.18 失效群内反馈
 #===================================
