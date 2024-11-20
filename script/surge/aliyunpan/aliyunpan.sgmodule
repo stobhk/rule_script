@@ -1,0 +1,22 @@
+#!name=阿里云盘签到
+#!desc=自动签到阿里云盘
+#!category=✅签到
+#!arguments=TIMEOUT:120,CRONEXP: 5 0 * * *
+
+[Script]
+# > 阿里云盘签到
+阿里云盘签到cookie = requires-body=1,type=http-response,pattern=https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+阿里云盘签到 = type=cron,cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}},script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+
+[MITM]
+hostname = %APPEND% auth.alipan.com
+
+
+#name=阿里云盘签到(樱花版)
+#desc=作者樱花
+#category=Script
+#[Script]
+#阿里云签到 = type=cron, cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}}, script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js
+## 获取cookie = type=http-request, pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token, script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, max-size=-1, timeout=60
+## [MITM]
+## hostname = %APPEND% auth.alipan.com, auth.aliyundrive.com
