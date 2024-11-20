@@ -1,7 +1,7 @@
 #!name=阿里云盘签到(樱花版)
 #!desc=自动签到阿里云盘
 #!category=✅签到
-#!arguments=TIMEOUT:120,CRONEXP: 5 0 * * *
+#!arguments=TIMEOUT:120,CRONEXP: 6 2 * * *
 
 [Script]
 阿里云盘签到 = type=cron, cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}}, script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js
