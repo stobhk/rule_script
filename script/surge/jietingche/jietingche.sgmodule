@@ -1,0 +1,12 @@
+#!name=捷停车签到
+#!desc=捷停车APP-停车币签到
+#!category=✅签到
+#!arguments=TIMEOUT:120,CRONEXP: 21 0 * * *
+
+[Script]
+获取捷停车userId = type=http-request, pattern=^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
+
+捷停车签到 = type=cron, cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}}, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, script-update-interval=0
+
+[MITM]
+hostname = %APPEND% sytgate.jslife.com.cn
