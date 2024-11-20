@@ -1,0 +1,12 @@
+#!name=途虎养车获取积分
+#!desc=途虎养车获取积分
+#!category=✅签到
+#!arguments=TIMEOUT:120,CRONEXP: 14 0 * * *
+
+[Script]
+途虎养车token = type=http-request,pattern=https:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/tuhu.js
+
+途虎养车获取积分 = type=cron,cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}},script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/tuhu.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND%  api.tuhu.cn
