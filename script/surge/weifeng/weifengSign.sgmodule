@@ -1,7 +1,7 @@
 #!name=威锋论坛签到
 #!desc=威锋论坛签到
 #!category=✅签到
-#!arguments=TIMEOUT:120,CRONEXP: 8 0 * * *
+#!arguments=TIMEOUT:120,CRONEXP: 2 0 * * *
 
 [Script]
 # > 威锋论坛签到+任务
