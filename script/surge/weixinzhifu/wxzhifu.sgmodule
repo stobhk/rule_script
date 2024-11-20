@@ -1,0 +1,23 @@
+#!name=微信支付有优惠-领金币
+#!desc=微信支付有优惠 - 领金币
+#!category=✅签到
+#!arguments=TIMEOUT:120,CRONEXP: 8 7 * * *
+
+/**
+ * 脚本名称：微信支付有优惠 - 领金币
+ * 活动规则：每周累计使用微信支付 10 次可领取 15 金币。
+ * 脚本说明：添加重写进入"微信支付有优惠"小程序即可获取 Token，支持多账号，仅支持 NE 环境。
+ * 环境变量：CODESERVER_ADDRESS、CODESERVER_FUN
+ * 更新时间：2024-03-30 新增兑换今日好礼
+            2024-03-31 优化通知内容
+            2024-04-01 修复兑换今日好礼变量配置和多账号通知等问题
+            2024-05-18 新增并发兑换立减金
+**/
+
+[Script]
+微付金币token = type=http-response,pattern=https:\/\/payapp\.weixin\.qq\.com\/(coupon-center-user\/home\/login|coupon-center-award\/award\/detail),requires-body=1,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,script-update-interval=0
+
+微付领金币 = type=cron,cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}},script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% payapp.weixin.qq.com
