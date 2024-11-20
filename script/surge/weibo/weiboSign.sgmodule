@@ -1,7 +1,7 @@
 #!name=新浪微博签到
 #!desc=新浪微博签到
 #!category=✅签到
-#!arguments=TIMEOUT:120,CRONEXP: 8 0 * * *
+#!arguments=TIMEOUT:120,CRONEXP: 17 0 * * *
 
 [Script]
 获取微博Token = type=http-request,pattern=^https:\/\/api\.weibo\.cn\/\d\/users\/show,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js
