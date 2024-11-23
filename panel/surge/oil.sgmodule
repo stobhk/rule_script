@@ -1,8 +1,8 @@
 #!name=油价
 #!desc=显示指定省份油价
 #!category=Panel面板
-#!arguments=RPOVNAME:江苏
+#!arguments=RPOVNAME:江苏,UPINTERVAL:7200
 [Panel]
 油价=script-name=油价
 [Script]
-油价=type=generic,script-path=https://raw.githubusercontent.com/stobhk/rule_script/main/panel/surge/js/oil.js,argument=icon=car&color=#c932a9&provname={{{RPOVNAME}}},update-interval=7200
+油价=type=generic,script-path=https://raw.githubusercontent.com/stobhk/rule_script/main/panel/surge/js/oil.js,argument=icon=car&color=#c932a9&provname={{{RPOVNAME}}},update-interval={{{UPINTERVAL}}}
