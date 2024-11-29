@@ -1,8 +1,7 @@
 #!name=鸿星尔克签到
-#!desc=鸿星尔克签到
+#!desc=鸿星尔克小程序签到
 #!category=✅签到
 #!arguments=TIMEOUT:120,CRONEXP: 23 0 * * *
-
 
 
 ================ Surge 配置 ================
