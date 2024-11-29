@@ -12,4 +12,4 @@ hostname = %APPEND% hope.demogic.com
 [Script]
 鸿星尔克Cookie = type=http-request,pattern=^https:\/\/hope\.demogic\.com\/gic-wx-app\/get-member-asset\.json,script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/erke.js
 
-鸿星尔克签到 = type=cron, cronexp={{{CRONEXP}}}, script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/erke.js
+鸿星尔克签到 = type=cron, cronexp={{{CRONEXP}}} ,wake-system=1,timeout={{{TIMEOUT}}}, script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/erke.js
