@@ -1,7 +1,7 @@
 #!name=WPS签到
 #!desc=WPS签到
 #!category=✅签到
-#!arguments=AK:null,SK:null,MAX_RETRIES:5,TIMEOUT:120,CRONEXP: 3 9 * * *,DAY:1
+#!arguments=AK:null,SK:null,MAX_RETRIES:5,TIMEOUT:120,CRONEXP: 34 5 * * *,DAY:1
 #!arguments-desc=百度API\nAK - API Key\nSK - Secret Key\nMAX_RETRIES - 最大运行次数\nDAY - 兑换天数 (默认为1)
 
 [Script]
