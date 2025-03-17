@@ -1,0 +1,12 @@
+#!脚本名称：伊利乳品（修改自id77）
+#!活动说明：每日任务可获得积分，兼容 NE 手机代理和青龙等 Node.js 环境，变量名称 id77_yiLi_cookies
+#!脚本来源：https://github.com/id77/QuantumultX/blob/master/task/yiLi.js
+#!更新时间：2023-08-29
+# 支持多账号
+# 进入小程序点我的
+
+# Loon
+http-request https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/yiLi.js, requires-body=true,
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/yiLi.js
+
+hostname = club.yili.com
