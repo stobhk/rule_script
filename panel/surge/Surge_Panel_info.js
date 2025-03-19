@@ -46,7 +46,7 @@ let args = getArgs();
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
   content.push(``};
   if (lsdown && lsup !== "false") {
-    content.push(`上传：${bytesToSize(lsup) | 下载：${bytesToSize(lsdown) `);
+    content.push(`上传：${bytesToSize(lsup)} | 下载：${bytesToSize(lsdown)} `);
   }
   if (resetDayLeft) {
     content.push(`重置：剩余${resetDayLeft}天`);
