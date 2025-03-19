@@ -44,7 +44,7 @@ let args = getArgs();
   let total = info.total;
   let expire = args.expire || info.expire;
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
-  content.push(``};
+  content.push(``);
   if (lsdown && lsup !== "false") {
     content.push(`上传：${bytesToSize(lsup)} | 下载：${bytesToSize(lsdown)} `);
   }
