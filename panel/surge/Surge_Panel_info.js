@@ -43,13 +43,15 @@ let args = getArgs();
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
+  let expireDaysLeft = getExpireDaysLeft(expire);
+  
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
   content.push(``);
   if (lsdown && lsup !== "false") {
     content.push(`上传：${bytesToSize(lsup)} | 下载：${bytesToSize(lsdown)} `);
   }
   if (resetDayLeft) {
-    content.push(`重置：剩余${resetDayLeft}天`);
+    content.push(`提醒：剩余${resetDayLeft}天` | ，${expireDaysLeft}天后到期`);
   }
   if (expire && expire !== "false") {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
@@ -137,6 +139,24 @@ function getRmainingDays(resetDay) {
   }
 
   return daysInMonth - today + resetDay;
+}
+
+function getExpireDaysLeft(expire) {
+  if (!expire) return;
+
+  let now = new Date().getTime();
+  let expireTime;
+
+  // 检查是否为时间戳
+  if (/^[\d.]+$/.test(expire)) {
+    expireTime = parseInt(expire) * 1000;
+  } else {
+    // 尝试解析YYYY-MM-DD格式的日期
+    expireTime = new Date(expire).getTime();
+  }
+
+  let daysLeft = Math.ceil((expireTime - now) / (1000 * 60 * 60 * 24));
+  return daysLeft > 0 ? daysLeft : null;
 }
 
 function bytesToSize(bytes) {
