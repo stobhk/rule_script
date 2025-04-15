@@ -48,9 +48,9 @@ let args = getArgs();
   let content = ``;
   
   if (used == 0){
-    let content = [`用量：总量剩余${bytesToSize(total)}`];
+    content = [`用量：总量剩余${bytesToSize(total)}`];
   }else{
-    let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
+    content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
   }
   
   /*
