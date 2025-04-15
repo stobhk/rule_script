@@ -55,10 +55,34 @@ let args = getArgs();
   if (resetDayLeft) {
     content.push(`提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`);
   }
-  if (expire && expire !== "false") {
-    if (/^[\d.]+$/.test(expire)) expire *= 1000;
-    content.push(`到期：${formatTime(expire)}`);
+  
+  // 判断是否为不限时套餐
+  if (!resetDayLeft && !expireDaysLeft) {
+    let percentage = ((used / total) * 100).toFixed(1);
+    content.push(`提醒：流量已使用${percentage}%`);
+  } else {
+    if (resetDayLeft && expireDaysLeft) {
+      content.push(`提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`);
+    } else if (resetDayLeft) {
+      content.push(`提醒：流量将在${resetDayLeft}天后重置`);
+    } else if (expireDaysLeft) {
+      content.push(`提醒：套餐将在${expireDaysLeft}天后到期`);
+    }
+    
+    // 到期时间（日期）显示
+    /*
+    if (expireDaysLeft) {
+      content.push(`到期：${formatTime(args.expire || info.expire)}`);
+    }
+    */
+    if (expire && expire !== "false") {
+      if (/^[\d.]+$/.test(expire)) expire *= 1000;
+      content.push(`到期：${formatTime(expire)}`);
+    }
   }
+
+  
+
 
   let now = new Date();
   let hour = now.getHours();
