@@ -44,9 +44,16 @@ let args = getArgs();
   let total = info.total;
   let expire = args.expire || info.expire;
   let expireDaysLeft = getExpireDaysLeft(expire);
+
+  let content = ``;
   
-  let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
-/*
+  if (used == 0){
+    let content = [`用量：总量剩余${bytesToSize(total)}`];
+  }else{
+    let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
+  }
+  
+  /*
   content.push(``);
   if (lsdown && lsup !== "false") {
     content.push(`上传：${bytesToSize(lsup)}， 下载：${bytesToSize(lsdown)} `);
