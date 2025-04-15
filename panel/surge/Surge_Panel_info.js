@@ -46,10 +46,12 @@ let args = getArgs();
   let expireDaysLeft = getExpireDaysLeft(expire);
   
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
+/*
   content.push(``);
   if (lsdown && lsup !== "false") {
     content.push(`上传：${bytesToSize(lsup)} | ， 下载：${bytesToSize(lsdown)} `);
   }
+*/  
   if (resetDayLeft) {
     content.push(`提醒：${resetDayLeft}天后重置 | ，${expireDaysLeft}天后到期`);
   }
