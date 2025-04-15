@@ -49,11 +49,11 @@ let args = getArgs();
 /*
   content.push(``);
   if (lsdown && lsup !== "false") {
-    content.push(`上传：${bytesToSize(lsup)} | ， 下载：${bytesToSize(lsdown)} `);
+    content.push(`上传：${bytesToSize(lsup)}， 下载：${bytesToSize(lsdown)} `);
   }
 */  
   if (resetDayLeft) {
-    content.push(`提醒：${resetDayLeft}天后重置 | ，${expireDaysLeft}天后到期`);
+    content.push(`提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`);
   }
   if (expire && expire !== "false") {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
