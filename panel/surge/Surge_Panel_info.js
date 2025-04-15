@@ -67,8 +67,10 @@ let args = getArgs();
   
   // 判断是否为不限时套餐
   if (!resetDayLeft && !expireDaysLeft) {
-    let percentage = ((used / total) * 100).toFixed(1);
-    content.push(`提醒：流量已使用${percentage}%`);
+  	if(used == 0 && total == 0){
+  		let percentage = ((used / total) * 100).toFixed(1);
+  		content.push(`提醒：流量已使用${percentage}%`);
+  	}
   } else {
     if (resetDayLeft && expireDaysLeft) {
       content.push(`提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`);
