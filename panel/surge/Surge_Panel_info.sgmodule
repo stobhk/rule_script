@@ -4,8 +4,4 @@
 # 更新日期：2024.10.25
 
 [Panel]
-#PanelA = script-name=net-info, update-interval=3600
-#PanelB = script-name=stream-all, update-interval=3600
-PanelC = script-name=Sub_info, update-interval=36000
-#PanelD = script-name=NetSpeed,update-interval=-1
-#PanelE = script-name=SurgePro_ReloadProfile,update-interval=1
+PanelA = script-name=Sub_info, update-interval=36000   
