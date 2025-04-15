@@ -51,10 +51,12 @@ let args = getArgs();
   if (lsdown && lsup !== "false") {
     content.push(`上传：${bytesToSize(lsup)}， 下载：${bytesToSize(lsdown)} `);
   }
-*/  
+
   if (resetDayLeft) {
     content.push(`提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`);
   }
+  */  
+
   
   // 判断是否为不限时套餐
   if (!resetDayLeft && !expireDaysLeft) {
@@ -64,9 +66,9 @@ let args = getArgs();
     if (resetDayLeft && expireDaysLeft) {
       content.push(`提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`);
     } else if (resetDayLeft) {
-      content.push(`提醒：流量将在${resetDayLeft}天后重置`);
+      content.push(`提醒：${resetDayLeft}天后重置`);
     } else if (expireDaysLeft) {
-      content.push(`提醒：套餐将在${expireDaysLeft}天后到期`);
+      content.push(`提醒：${expireDaysLeft}天后到期`);
     }
     
     // 到期时间（日期）显示
