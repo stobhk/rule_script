@@ -1,7 +1,0 @@
-#!name=机场流量
-#!desc=显示机场剩余流量
-#!category=Panel面板
-# 更新日期：2024.10.25
-
-[Panel]
-PanelA = script-name=Sub_info, update-interval=36000   
