@@ -1,0 +1,11 @@
+#!name=机场流量99
+#!desc=显示机场剩余流量
+#!category=Panel面板
+#!arguments=URL:https%3A%2F%2Fwww.google.com%2F,RESETDAY:1,TITLE:机场流量信息,ICON:paperplane.circle,COLOR:#007aff
+# 更新日期：2024.10.25
+
+[Script]      
+Sub_info99 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/stobhk/rule_script/refs/heads/main/panel/surge/Surge_Panel_info.js,script-update-interval=0,argument=url={{{URL}}}&reset_day={{{RESETDAY}}}&title={{{TITLE}}}&icon={{{ICON}}}&color={{{COLOR}}}
+
+[Panel]
+Panel99 = script-name=Sub_info99, update-interval=36000   
