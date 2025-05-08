@@ -1,7 +1,7 @@
 #!name=机场流量05
 #!desc=显示机场剩余流量
 #!category=Panel面板
-#!arguments=URL:https%3A%2F%2Fwww.google.com%2F,RESETDAY:1,TITLE:机场流量信息,ICON:paperplane.circle,COLOR:#007aff
+#!arguments=URL:https%3A%2F%2Fwww.google.com%2F,RESETDAY:,TITLE:机场流量信息,ICON:paperplane.circle,COLOR:#007aff
 # 更新日期：2024.10.25
 
 [Script]      
