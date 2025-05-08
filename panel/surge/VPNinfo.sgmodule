@@ -5,7 +5,7 @@
 # 更新日期：2024.10.25
 
 [Script]      
-Sub_info{{{COUNT}}} = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/stobhk/rule_script/refs/heads/main/panel/surge/Surge_Panel_info.js,script-update-interval=0,argument=url={{{URL}}}&reset_day={{{RESETDAY}}}&title={{{TITLE}}}&icon={{{ICON}}}&color={{{COLOR}}}
+Sub_info01 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/stobhk/rule_script/refs/heads/main/panel/surge/Surge_Panel_info.js,script-update-interval=0,argument=url={{{URL}}}&reset_day={{{RESETDAY}}}&title={{{TITLE}}}&icon={{{ICON}}}&color={{{COLOR}}}
 
 [Panel]
-Panel{{{COUNT}}} = script-name=Sub_info{{{COUNT}}}, update-interval=36000   
+Panel01 = script-name=Sub_info01, update-interval=36000   
