@@ -1,7 +1,7 @@
 #!name=百度贴吧
 #!desc=百度贴吧每日自动签到
 #!category=✅签到
-#!arguments=CRONEXP:15 9 * * *,CRONEXP2: 13 21 * * *,TIMEOUT:120
+#!arguments=CRONEXP:15 9 * * *,CRONEXP2: 13 21 * * *,TIMEOUT:180
 
 [Script]
 贴吧_每日签到 = type=cron,cronexp={{{CRONEXP}}},timeout={{{TIMEOUT}}},script-path=https://gist.githubusercontent.com/blackmatrix7/cebabe7a385fc6a9ad32e2f7a35851dc/raw/1363d8720c92267d0a97fcd8eb98673760891fc9/tieba_min.js
