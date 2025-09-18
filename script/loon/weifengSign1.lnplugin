@@ -1,0 +1,8 @@
+#!name=威锋签到
+#!desc=威锋签到
+#!category=✅签到
+#!arguments=TIMEOUT:120,CRONEXP: 2 0 * * *
+
+[Script]
+# > 威锋论坛签到+任务
+cron "25 10 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weifeng.js,timeout={{{TIMEOUT}}},tag=威锋签到
