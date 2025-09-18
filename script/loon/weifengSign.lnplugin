@@ -1,0 +1,8 @@
+#!name=贴吧_每日签到
+#!desc=贴吧_每日签到
+#!category=✅签到
+#!arguments=TIMEOUT:120,CRONEXP: 2 0 * * *
+
+[Script]
+# > 威锋论坛签到+任务
+cron {{{CRONEXP}}} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weifeng.js,timeout={{{TIMEOUT}}},tag=贴吧_每日签到
