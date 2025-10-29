@@ -3,8 +3,15 @@
 #!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1079.png
 #!tag=酷狗概念版
 
+[Argument]
+CRONEXP = input,"default-placehodler-content",tag=执行周期,desc=执行周期
+TIMEOUT = input,"default-placehodler-content",tag=超时时长TimeOut,desc=超时时长TimeOut
+
+#arg2 = select,"select1","select2","select2",tag=参数2的标题,desc=这是一个选择类型的参数说明
+#arg3 = switch,true,tag=参数3的标题,desc=这是一个true、false的切换参数
+
 [Script]
-cron "10 0 * * *" script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_vip.js, tag=酷狗领取VIP
+cron [{CRONEXP}] script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_vip.js, tag=酷狗领取VIP
 
 http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/activity/get_month_vip_record.* script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_cookie.js, tag=酷狗数据
 
