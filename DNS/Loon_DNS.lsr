@@ -73,6 +73,9 @@
 *.douyinpic.com = server:180.184.1.1
 *.fanqienovel.com = server:180.184.1.1
 *.changdunovel.com = server:180.184.1.1
+*.fqnovel.com = server:180.184.1.1
+*.fqnovelpic.com = server:180.184.1.1
+*.byteimg.com = server:180.184.1.1
 # *.microsoft.com = server:8.8.8.8
 # *.‌microsoftstore.com = server:8.8.8.8
 # *.‌office.com‌ = server:8.8.8.8
