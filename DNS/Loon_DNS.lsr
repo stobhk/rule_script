@@ -1,7 +1,6 @@
 #!name=指定DNS解析
 #!desc=特定域名由指定的DNS服务器进行解析
 #!category=DNS解析
-
 [HOST]
 # > 腾讯 域名
 *.qq.com = server:https://doh.pub/dns-query
@@ -41,6 +40,7 @@
 *.baidu.com = server:180.76.76.76
 # > 字节跳动 域名
 *.douyin.com = server:180.184.1.1
+*.snssdk.com = server:180.184.1.1
 *.toutiao.com = server:180.184.1.1
 *.ixigua.com = server:180.184.1.1
 *.douyinvod.com = server:180.184.1.1
