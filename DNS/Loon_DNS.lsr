@@ -1,5 +1,8 @@
-[HOST]
+#!name=指定DNS解析
+#!desc=特定域名由指定的DNS服务器进行解析
+#!category=DNS解析
 
+[HOST]
 # > 腾讯 域名
 *.qq.com = server:https://doh.pub/dns-query
 *.tencent.com = server:https://doh.pub/dns-query
