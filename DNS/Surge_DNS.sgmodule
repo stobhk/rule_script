@@ -36,6 +36,9 @@
 *.alifilm.com = server:h3://dns.alidns.com/dns-query
 *.lazada.com = server:h3://dns.alidns.com/dns-query
 *.daraz.com = server:h3://dns.alidns.com/dns-query
+*.bytegecko.com = server:h3://dns.alidns.com/dns-query
+*.digital-nvme.com = server:h3://dns.alidns.com/dns-query
+*.ecombdapi.com = server:h3://dns.alidns.com/dns-query
 # > 百度 域名
 *.baidu.com = server:180.76.76.76
 # > 字节跳动 域名
@@ -56,6 +59,17 @@
 *.haimian.com = server:180.184.1.1
 *.mubu.com = server:180.184.1.1
 *.juejin.com = server:180.184.1.1
+*.bytegoofy.com = server:180.184.1.1
+*.zijieapi.com = server:180.184.1.1
+*.bytemastatic.com = server:180.184.1.1
+*.pstatp.com = server:180.184.1.1
+*.toutiaostatic.com = server:180.184.1.1
+*.toutiaovod.com = server:180.184.1.1
+*.bytedance.com = server:180.184.1.1
+*.bytedance.net = server:180.184.1.1
+*.toutiaoimg.com = server:180.184.1.1
+*.toutiaoapi.com = server:180.184.1.1
+*.ibytedapm.com = server:180.184.1.1
 # *.microsoft.com = server:8.8.8.8
 # *.‌microsoftstore.com = server:8.8.8.8
 # *.‌office.com‌ = server:8.8.8.8
