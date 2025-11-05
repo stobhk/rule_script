@@ -3,83 +3,16 @@
 #!category=DNS解析
 [HOST]
 # > 腾讯 域名
-*.qq.com = server:https://doh.pub/dns-query
-*.tencent.com = server:https://doh.pub/dns-query
-*.weixin.com = server:https://doh.pub/dns-query
-*.qqgame.com = server:https://doh.pub/dns-query
+RULE-SET:https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/tencent.conf = server:https://doh.pub/dns-query
 # > 阿里 域名
-*.alipay.com = server:h3://dns.alidns.com/dns-query
-*.aliyun.com = server:h3://dns.alidns.com/dns-query
-*.taobao.com = server:h3://dns.alidns.com/dns-query
-*.tmall.com = server:h3://dns.alidns.com/dns-query
-*.goofish.com = server:h3://dns.alidns.com/dns-query
-*.alibaba.com = server:h3://dns.alidns.com/dns-query
-*.1688.com = server:h3://dns.alidns.com/dns-query
-*.etao.com = server:h3://dns.alidns.com/dns-query
-*.antgroup.com = server:h3://dns.alidns.com/dns-query
-*.aliexpress.com = server:h3://dns.alidns.com/dns-query
-*.ele.me = server:h3://dns.alidns.com/dns-query
-*.fliggy.com = server:h3://dns.alidns.com/dns-query
-*.feizhu.com = server:h3://dns.alidns.com/dns-query
-*.youku.com = server:h3://dns.alidns.com/dns-query
-*.freshhema.com = server:h3://dns.alidns.com/dns-query
-*.damaiholdings.com = server:h3://dns.alidns.com/dns-query
-*.alibabapictures.com = server:h3://dns.alidns.com/dns-query
-*.cainiao.com = server:h3://dns.alidns.com/dns-query
-*.amap.com = server:h3://dns.alidns.com/dns-query
-*.zhixiaobao.com = server:h3://dns.alidns.com/dns-query
-*.kaola.com = server:h3://dns.alidns.com/dns-query
-*.uc.cn = server:h3://dns.alidns.com/dns-query
-*.xianyu.com = server:h3://dns.alidns.com/dns-query
-*.juhuasuan.com = server:h3://dns.alidns.com/dns-query
-*.dingtalk.com = server:h3://dns.alidns.com/dns-query
-*.alifilm.com = server:h3://dns.alidns.com/dns-query
-*.lazada.com = server:h3://dns.alidns.com/dns-query
-*.daraz.com = server:h3://dns.alidns.com/dns-query
-*.bytegecko.com = server:h3://dns.alidns.com/dns-query
-*.digital-nvme.com = server:h3://dns.alidns.com/dns-query
-*.ecombdapi.com = server:h3://dns.alidns.com/dns-query
+RULE-SET:https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/alibaba.conf = server:h3://dns.alidns.com/dns-query
+# > bilibili 域名
+RULE-SET:https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/bilibili.conf = server:https://doh.pub/dns-query
+# > 小米 域名
+RULE-SET:https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/xiaomi.conf = server:https://doh.pub/dns-query
 # > 百度 域名
-*.baidu.com = server:180.76.76.76
+RULE-SET:https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/baidu.conf = server:180.76.76.76
 # > 字节跳动 域名
-*.douyin.com = server:180.184.1.1
-*.snssdk.com = server:180.184.1.1
-*.toutiao.com = server:180.184.1.1
-*.ixigua.com = server:180.184.1.1
-*.douyinvod.com = server:180.184.1.1
-*.douyinpay.com = server:180.184.1.1
-*.dongchedi.com = server:180.184.1.1
-*.pipix.com = server:180.184.1.1
-*.feishu.com = server:180.184.1.1
-*.huoshan.com = server:180.184.1.1
-*.wukong.com = server:180.184.1.1
-*.tuchong.com = server:180.184.1.1
-*.duoshan.com = server:180.184.1.1
-*.baike.com = server:180.184.1.1
-*.haimian.com = server:180.184.1.1
-*.mubu.com = server:180.184.1.1
-*.juejin.com = server:180.184.1.1
-*.bytegoofy.com = server:180.184.1.1
-*.zijieapi.com = server:180.184.1.1
-*.bytemastatic.com = server:180.184.1.1
-*.pstatp.com = server:180.184.1.1
-*.toutiaostatic.com = server:180.184.1.1
-*.toutiaovod.com = server:180.184.1.1
-*.bytedance.com = server:180.184.1.1
-*.bytedance.net = server:180.184.1.1
-*.toutiaoimg.com = server:180.184.1.1
-*.toutiaoapi.com = server:180.184.1.1
-*.ibytedapm.com = server:180.184.1.1
-*.douyinpic.com = server:180.184.1.1
-*.fanqienovel.com = server:180.184.1.1
-*.changdunovel.com = server:180.184.1.1
-*.fqnovel.com = server:180.184.1.1
-*.fqnovelpic.com = server:180.184.1.1
-*.byteimg.com = server:180.184.1.1
-# *.microsoft.com = server:8.8.8.8
-# *.‌microsoftstore.com = server:8.8.8.8
-# *.‌office.com‌ = server:8.8.8.8
-# *.‌outlook.com‌ = server:8.8.8.8
-# *.apple.com = server:114.114.114.114
-# *.apple.com.cn = server:114.114.114.114
-# *.icloud.com = server:114.114.114.114
+RULE-SET:https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/bytedance.conf = server:180.184.1.1
+# > 360安全 域名
+RULE-SET:https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/qihoo360.conf = server:https://doh.360.cn/dns-query
