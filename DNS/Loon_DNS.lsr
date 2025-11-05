@@ -17,6 +17,19 @@ RULE-SET:https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/bytedance
 # > 360安全 域名
 RULE-SET:https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/qihoo360.conf = server:https://doh.360.cn/dns-query
 # > Cloudflare 域名
-RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Cloudflare/Cloudflare_Resolve.list = server:https://cloudflare-dns.com/dns-query
-# > Apple 域名
-RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple_All.list = server:https://doh.dns.apple.com/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Cloudflare/Cloudflare.list = server:https://cloudflare-dns.com/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Cloudflarecn/Cloudflarecn.list = server:https://cloudflare-dns.com/dns-query
+# > Google 域名
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Google/Google_Resolve.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GoogleFCM/GoogleFCM_Resolve.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/YouTube/YouTube_Resolve.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GoogleFCM/GoogleFCM_Resolve.list = server:h3://dns.google/dns-query
+
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GoogleDrive/GoogleDrive.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GoogleEarth/GoogleEarth.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GoogleSearch/GoogleSearch.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GoogleVoice/GoogleVoice.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/YouTubeMusic/YouTubeMusic.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Chromecast/Chromecast.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Gemini/Gemini.list = server:h3://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/BardAI/BardAI.list = server:h3://dns.google/dns-query
