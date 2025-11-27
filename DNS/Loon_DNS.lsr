@@ -7,6 +7,7 @@
 *.tencent.com = server:https://doh.pub/dns-query
 *.weixin.com = server:https://doh.pub/dns-query
 *.qqgame.com = server:https://doh.pub/dns-query
+*.tencentcos.cn = server:https://doh.pub/dns-query
 # > 阿里 域名
 *.alipay.com = server:h3://dns.alidns.com/dns-query
 *.aliyun.com = server:h3://dns.alidns.com/dns-query
