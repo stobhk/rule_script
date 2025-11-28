@@ -478,3 +478,14 @@ upos-sz-upcdnbd??.bilivideo.com = server:180.76.76.76
 # BiliBili upos视频服务器（腾讯云）
 upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
 
+
+
+# > Apple
+# refer: https://support.apple.com/zh-cn/HT210060
+networking.apple = server:https://doh.dns.apple.com/dns-query
+# Apple.com
+*.apple.com = server:https://doh.dns.apple.com/dns-query
+# iCloud.com
+*.icloud.com = server:https://doh.dns.apple.com/dns-query
+
+
