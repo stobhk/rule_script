@@ -480,12 +480,4 @@ upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
 
 
 
-# > Apple
-# refer: https://support.apple.com/zh-cn/HT210060
-networking.apple = server:https://doh.dns.apple.com/dns-query
-# Apple.com
-*.apple.com = server:https://doh.dns.apple.com/dns-query
-# iCloud.com
-*.icloud.com = server:https://doh.dns.apple.com/dns-query
-
 
