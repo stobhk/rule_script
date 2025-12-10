@@ -3,7 +3,36 @@
 #!category=DNS解析
 [HOST]
 # > 腾讯 域名
+*.coding.net = server:https://doh.pub/dns-query
+*.anticheatexpert.com = server:https://doh.pub/dns-query
+*.tencentmusic.com = server:https://doh.pub/dns-query
+*.wegameplus.com = server:https://doh.pub/dns-query
+*.wegame.com.cn = server:https://doh.pub/dns-query
+*.wegame.com = server:https://doh.pub/dns-query
+*.tcdnlive.com = server:https://doh.pub/dns-query
+*.sogoucdn.com = server:https://doh.pub/dns-query
+*.qlivecdn.com = server:https://doh.pub/dns-query
+*.udqqimg.com = server:https://doh.pub/dns-query
+*.igamecj.com = server:https://doh.pub/dns-query
+*.qqmail.com = server:https://doh.pub/dns-query
+*.gdtimg.com = server:https://doh.pub/dns-query
+*.dnspod.com = server:https://doh.pub/dns-query
+*.dnspod.cn = server:https://doh.pub/dns-query
+*.dnspod.com.cn = server:https://doh.pub/dns-query
+*.dnspod.net = server:https://doh.pub/dns-query
+*.dnspod.org = server:https://doh.pub/dns-query
+*.sogou.com = server:https://doh.pub/dns-query
+*.qzone.com = server:https://doh.pub/dns-query
+*.myapp.com = server:https://doh.pub/dns-query
+*.dnsv1.com = server:https://doh.pub/dns-query
+*.soso.com = server:https://doh.pub/dns-query
+*.sogo.com = server:https://doh.pub/dns-query
+*.tencentcs.cn = server:https://doh.pub/dns-query
+*.robloxdev.cn = server:https://doh.pub/dns-query
+*.codehub.cn = server:https://doh.pub/dns-query
+*.roblox.cn = server:https://doh.pub/dns-query
 *.tencent.com = server:https://doh.pub/dns-query
+*.tencent.com.cn = server:https://doh.pub/dns-query
 *.qqgame.com = server:https://doh.pub/dns-query
 *.tencentcos.cn = server:https://doh.pub/dns-query
 # 腾讯云
@@ -24,7 +53,11 @@
 # 腾讯开放云
 *.myqcloud.com = server:https://doh.pub/dns-query
 # 腾讯云
+*.tencent-cloud.com = server:https://doh.pub/dns-query
+*.tencent-cloud.cn = server:https://doh.pub/dns-query
+*.tencent-cloud.com.cn = server:https://doh.pub/dns-query
 *.tencent-cloud.net = server:https://doh.pub/dns-query
+*.tencent-cloud.org = server:https://doh.pub/dns-query
 # 腾讯云aiot解决方案
 *.tencentcloud-aiot.com = server:https://doh.pub/dns-query
 # 腾讯云API
@@ -35,6 +68,7 @@
 *.tencentcloudmarket.com = server:https://doh.pub/dns-query
 # QQ
 *.qq.com = server:https://doh.pub/dns-query
+*.qq.com.cn = server:https://doh.pub/dns-query
 # 腾讯头像
 *.qlogo.cn = server:https://doh.pub/dns-query
 # 腾讯图片
@@ -52,15 +86,23 @@
 # 微云
 *.weiyun.com = server:https://doh.pub/dns-query
 # 腾讯 图片 静态资源
+*.gtimg.com = server:https://doh.pub/dns-query
 *.gtimg.cn = server:https://doh.pub/dns-query
+*.gtimg.com.cn = server:https://doh.pub/dns-query
+*.gtimg.net = server:https://doh.pub/dns-query
+*.gtimg.org = server:https://doh.pub/dns-query
 *.idqqimg.com = server:https://doh.pub/dns-query
 # 腾讯 静态资源 CDN
 *.cdn-go.cn = server:https://doh.pub/dns-query
 # 腾讯云 智能云解析DNS
 *.smtcdns.com = server:https://doh.pub/dns-query
+*.smtcdns.cn = server:https://doh.pub/dns-query
+*.smtcdns.com.cn = server:https://doh.pub/dns-query
+*.smtcdns.org = server:https://doh.pub/dns-query
 *.smtcdns.net = server:https://doh.pub/dns-query
 # 腾讯短网址
-url.cn = server:https://doh.pub/dns-query
+*.url.cn = server:https://doh.pub/dns-query
+tx-safety-video.acfun.cn = server:https://doh.pub/dns-query
 
 # > 阿里 域名
 *.goofish.com = server:h3://dns.alidns.com/dns-query
@@ -88,7 +130,61 @@ url.cn = server:https://doh.pub/dns-query
 *.digital-nvme.com = server:h3://dns.alidns.com/dns-query
 *.ecombdapi.com = server:h3://dns.alidns.com/dns-query
 
-
+ali-safety-video.acfun.cn = server:h3://dns.alidns.com/dns-query
+*.cibntv.net = server:h3://dns.alidns.com/dns-query
+*.xiami.net = server:h3://dns.alidns.com/dns-query
+*.xiami.com = server:h3://dns.alidns.com/dns-query
+*.alibabausercontent.com = server:h3://dns.alidns.com/dns-query
+*.alibabachengdun.com = server:h3://dns.alidns.com/dns-query
+*.cainiaoyizhan.com = server:h3://dns.alidns.com/dns-query
+*.taopiaopiao.com = server:h3://dns.alidns.com/dns-query
+*.alicloudccp.com = server:h3://dns.alidns.com/dns-query
+*.alibaba-inc.com = server:h3://dns.alidns.com/dns-query
+*.guoguo-app.com = server:h3://dns.alidns.com/dns-query
+*.alibabadns.com = server:h3://dns.alidns.com/dns-query
+*.wandoujia.com = server:h3://dns.alidns.com/dns-query
+*.taobaocdn.com = server:h3://dns.alidns.com/dns-query
+*.npmmirror.com = server:h3://dns.alidns.com/dns-query
+*.mxhichina.com = server:h3://dns.alidns.com/dns-query
+*.hellobike.com = server:h3://dns.alidns.com/dns-query
+*.freshippo.com = server:h3://dns.alidns.com/dns-query
+*.alipaydev.com = server:h3://dns.alidns.com/dns-query
+*.shyhhema.com = server:h3://dns.alidns.com/dns-query
+*.myalicdn.com = server:h3://dns.alidns.com/dns-query
+*.elemecdn.com = server:h3://dns.alidns.com/dns-query
+*.autonavi.com = server:h3://dns.alidns.com/dns-query
+*.aligames.com = server:h3://dns.alidns.com/dns-query
+*.alibtrip.com = server:h3://dns.alidns.com/dns-query
+*.ialicdn.com = server:h3://dns.alidns.com/dns-query
+*.hichina.com = server:h3://dns.alidns.com/dns-query
+*.hemamax.com = server:h3://dns.alidns.com/dns-query
+*.cdngslb.com = server:h3://dns.alidns.com/dns-query
+*.alimama.com = server:h3://dns.alidns.com/dns-query
+*.koubei.com = server:h3://dns.alidns.com/dns-query
+*.hemaos.com = server:h3://dns.alidns.com/dns-query
+*.alipan.com = server:h3://dns.alidns.com/dns-query
+*.aliimg.com = server:h3://dns.alidns.com/dns-query
+*.alidns.com = server:h3://dns.alidns.com/dns-query
+*.yuque.com = server:h3://dns.alidns.com/dns-query
+*.yunos.com = server:h3://dns.alidns.com/dns-query
+*.ykimg.com = server:h3://dns.alidns.com/dns-query
+*.yitao.com = server:h3://dns.alidns.com/dns-query
+*.tudou.com = server:h3://dns.alidns.com/dns-query
+*.nlark.com = server:h3://dns.alidns.com/dns-query
+*.gaode.com = server:h3://dns.alidns.com/dns-query
+*.tanx.com = server:h3://dns.alidns.com/dns-query
+*.soku.com = server:h3://dns.alidns.com/dns-query
+*.25pp.com = server:h3://dns.alidns.com/dns-query
+*.hemashare.cn = server:h3://dns.alidns.com/dns-query
+*.iconfont.cn = server:h3://dns.alidns.com/dns-query
+*.mybank.cn = server:h3://dns.alidns.com/dns-query
+*.alipay.cn = server:h3://dns.alidns.com/dns-query
+*.uczzd.cn = server:h3://dns.alidns.com/dns-query
+*.tbcdn.cn = server:h3://dns.alidns.com/dns-query
+*.alios.cn = server:h3://dns.alidns.com/dns-query
+*.9game.cn = server:h3://dns.alidns.com/dns-query
+*.cainiao.com.cn = server:h3://dns.alidns.com/dns-query
+*.sm.cn = server:h3://dns.alidns.com/dns-query
 # > 阿里巴巴
 # refer: https://www.alidns.com
 *.alibaba.com = server:h3://dns.alidns.com/dns-query
@@ -162,6 +258,33 @@ tb.cn = server:h3://dns.alidns.com/dns-query
 
 # > 百度 域名
 # refer: https://dudns.baidu.com/support/localdns/Address/index.html
+upos-sz-mirrorbos.bilivideo.com = server:180.76.76.76
+upos-sz-mirrorbdb.bilivideo.com = server:180.76.76.76
+upos-sz-mirrorbd.bilivideo.com = server:180.76.76.76
+upos-sz-mirrorbd?.bilivideo.com = server:180.76.76.76
+upos-sz-mirrorbd??.bilivideo.com = server:180.76.76.76
+upos-sz-upcdnbd.bilivideo.com = server:180.76.76.76
+upos-sz-upcdnbd?.bilivideo.com = server:180.76.76.76
+upos-sz-upcdnbd??.bilivideo.com = server:180.76.76.76
+*.yunjiasu-cdn.net = server:180.76.76.76
+*.baiducontent.com = server:180.76.76.76
+*.baidustatic.com = server:180.76.76.76
+*.zuoyebang.com = server:180.76.76.76
+*.xiaodutv.com = server:180.76.76.76
+*.iqiyipic.com = server:180.76.76.76
+*.baidubcr.com = server:180.76.76.76
+*.jomodns.com = server:180.76.76.76
+*.bcelive.com = server:180.76.76.76
+*.antpcdn.com = server:180.76.76.76
+*.zybang.com = server:180.76.76.76
+*.shifen.com = server:180.76.76.76
+*.jomoxc.com = server:180.76.76.76
+*.hao123.com = server:180.76.76.76
+*.tieba.com = server:180.76.76.76
+*.iqiyi.com = server:180.76.76.76
+*.duapp.com = server:180.76.76.76
+*.91.com = server:180.76.76.76
+
 *.baidu = server:180.76.76.76
 *.baidu.com = server:180.76.76.76
 # 百度 静态资源
@@ -200,6 +323,41 @@ dwz.cn = server:180.76.76.76
 
 # > 字节跳动 域名
 # refer: https://www.volcengine.com/docs/6758/179060
+*.pangolin-sdk-toutiao.com = server:180.184.1.1
+*.pglstatp-toutiao.com = server:180.184.1.1
+*.huoshanstatic.com = server:180.184.1.1
+*.byteeffecttos.com = server:180.184.1.1
+*.douyinliving.com = server:180.184.1.1
+*.oceanengine.com = server:180.184.1.1
+*.ixiguavideo.com = server:180.184.1.1
+*.byteacctimg.com = server:180.184.1.1
+*.xiaoxiaapi.com = server:180.184.1.1
+*.volcengine.com = server:180.184.1.1
+*.edge-byted.com = server:180.184.1.1
+*.dcarstatic.com = server:180.184.1.1
+*.volcvideo.com = server:180.184.1.1
+*.ppxstatic.com = server:180.184.1.1
+*.feishupkg.com = server:180.184.1.1
+*.feishucdn.com = server:180.184.1.1
+*.douyincdn.com = server:180.184.1.1
+*.bytecdntp.com = server:180.184.1.1
+*.ixgvideo.com = server:180.184.1.1
+*.dcarlive.com = server:180.184.1.1
+*.volccdn.com = server:180.184.1.1
+*.dcarvod.com = server:180.184.1.1
+*.dcarimg.com = server:180.184.1.1
+*.dcarapi.com = server:180.184.1.1
+*.bytetcc.com = server:180.184.1.1
+*.volces.com = server:180.184.1.1
+*.ppxvod.com = server:180.184.1.1
+*.ppximg.com = server:180.184.1.1
+*.doubao.com = server:180.184.1.1
+*.okr.com = server:180.184.1.1
+*.rsproxy.cn = server:180.184.1.1
+*.bytecdn.cn = server:180.184.1.1
+*.zjurl.cn = server:180.184.1.1
+*.coze.cn = server:180.184.1.1
+
 *.douyinpay.com = server:180.184.1.1
 *.dongchedi.com = server:180.184.1.1
 *.pipix.com = server:180.184.1.1
@@ -300,6 +458,16 @@ dwz.cn = server:180.76.76.76
 
 # > 360
 # refer: https://sdns.360.net/dnsPublic.html#course
+*.qhstatic.com = server:https://doh.360.cn/dns-query
+*.360tpcdn.com = server:https://doh.360.cn/dns-query
+*.qihucdn.com = server:https://doh.360.cn/dns-query
+*.baomitu.com = server:https://doh.360.cn/dns-query
+*.360simg.com = server:https://doh.360.cn/dns-query
+*.qh-cdn.com = server:https://doh.360.cn/dns-query
+*.haosou.com = server:https://doh.360.cn/dns-query
+*.360os.com = server:https://doh.360.cn/dns-query
+*.qiku.com = server:https://doh.360.cn/dns-query
+
 # 360安全中心
 *.360.cn = server:https://doh.360.cn/dns-query
 # 360安全卫士
