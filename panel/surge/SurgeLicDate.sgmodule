@@ -1,5 +1,5 @@
 #!name = Surge Pro
-#!desc=🔗 [2025年7月31日 下午8:04:04] Surge 订阅日期面板\n作者：@Nebulosa-Cat
+#!desc=Surge 订阅日期面板
 #!arguments = "licensesDate:2025-11-17"
 #!arguments-desc = 请严格按照 YYYY-MM-DD 格式填入授权到期日
 
