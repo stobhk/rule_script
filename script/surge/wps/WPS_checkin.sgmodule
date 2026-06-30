@@ -3,8 +3,15 @@
 #!category=✅签到
 #!arguments=TIMEOUT:120,CRONEXP: 24 0 * * *
 
+# > 😀 WPS Office 每日签到 + 福利中心多项任务
+# > 🤫 脚本包含功能：每日签到，打卡领会员，天天抽奖，会员试用申请，限量爆款领取，小程序打卡
+# > 🤫 使用步骤
+# > 1、按下方对应平台配置,开启重写脚本 + cron
+# > 2、打开「WPS」APP → 进任意活动页(任务中心 / 福利中心「天天领福利」)停留 1 秒
+# > 3、收到 ✅ WPS Cookie 获取成功 通知即抓取成功
+
 [Script]
-# > WPS获取Cookie  打开https://vip.wps.cn/home 登录账号后获取Cookie
+# > WPS获取Cookie
 WPS Cookie = type=http-request,pattern=^https:\/\/personal-act\.wps\.cn\/activity-rubik\/activity\/page_info,requires-body=false,max-size=0,script-path=https://raw.githubusercontent.com/MaYIHEI/paperclip/refs/heads/main/app/wps/wps.cookie.js,img-url=https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png
 
 # > WPS签到
