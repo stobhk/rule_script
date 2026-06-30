@@ -1,7 +1,7 @@
 #!name=WPS签到
 #!desc=WPS签到
 #!category=✅签到
-#!arguments=TIMEOUT:120,CRONEXP: 34 5 * * *
+#!arguments=TIMEOUT:120,CRONEXP: 24 0 * * *
 
 [Script]
 # > WPS获取Cookie  打开https://vip.wps.cn/home 登录账号后获取Cookie
