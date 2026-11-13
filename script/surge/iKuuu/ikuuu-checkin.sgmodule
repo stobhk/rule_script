@@ -9,10 +9,10 @@
 
 [Script]
 # 1. Cookie 自动抓取（通过 capture 参数控制是否执行）
-iKuuu Cookie 抓取 = type=http-request,pattern=^https?:\/\/(?:www\.)?ikuuu\.org\/,requires-body=0,script-path=ikuuu-cookie-surge.js,argument=notify={{{notify}}}&capture={{{capture}}}
+iKuuu Cookie 抓取 = type=http-request,pattern=^https?:\/\/(?:www\.)?ikuuu\.org\/,requires-body=0,script-path=ikuuu-cookie.js,argument=notify={{{notify}}}&capture={{{capture}}}
 
 # 2. 每日定时签到（在 Surge 脚本列表点击或左滑此项，即可直接触发“手动运行”）
-iKuuu 定时签到 = type=cron,cronexp={{{cronExpr}}},wake-system=1,timeout=60,script-path=ikuuu-checkin-surge.js,argument=cookie={{{cookie}}}&notify={{{notify}}}&requestNode={{{requestNode}}}&enabled={{{enabled}}}
+iKuuu 定时签到 = type=cron,cronexp={{{cronExpr}}},wake-system=1,timeout=60,script-path=ikuuu-checkin.js,argument=cookie={{{cookie}}}&notify={{{notify}}}&requestNode={{{requestNode}}}&enabled={{{enabled}}}
 
 [MITM]
 hostname = %APPEND% ikuuu.org, *.ikuuu.org
