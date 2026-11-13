@@ -1,0 +1,18 @@
+#!name=iKuuu 每日签到
+#!desc=自动签到 ikuuu.org：可开关的 Cookie 自动抓取、每日定时签到，通知签到结果和剩余流量
+#!author=Yjwj205 / Minis
+#!homepage=https://github.com/Yjwj205
+#!icon=calendar.badge.checkmark
+#!category=签到
+#!arguments=cookie:,capture:true,requestNode:,cronExpr:0 8 * * *,enabled:true,notify:true
+#!arguments-desc=cookie: 可选，留空则使用自动抓取/已保存的 Cookie\ncapture: 抓取 Cookie 开关（true/false），拿到后可设为 false\nrequestNode: 可选，节点名/策略组名/DIRECT，留空跟随规则\ncronExpr: 5 段 cron（分 时 日 月 周），默认每天 08:00\nenabled: 定时签到开关（true/false）\nnotify: 签到通知开关（true/false）
+
+[Script]
+# 1. Cookie 自动抓取（通过 capture 参数控制是否执行）
+iKuuu Cookie 抓取 = type=http-request,pattern=^https?:\/\/(?:www\.)?ikuuu\.org\/,requires-body=0,script-path=ikuuu-cookie-surge.js,argument=notify={{{notify}}}&capture={{{capture}}}
+
+# 2. 每日定时签到（在 Surge 脚本列表点击或左滑此项，即可直接触发“手动运行”）
+iKuuu 定时签到 = type=cron,cronexp={{{cronExpr}}},wake-system=1,timeout=60,script-path=ikuuu-checkin-surge.js,argument=cookie={{{cookie}}}&notify={{{notify}}}&requestNode={{{requestNode}}}&enabled={{{enabled}}}
+
+[MITM]
+hostname = %APPEND% ikuuu.org, *.ikuuu.org
